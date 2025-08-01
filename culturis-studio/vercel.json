@@ -1,5 +1,4 @@
 {
-  "name": "culturis-frontend",
   "version": 2,
   "builds": [
     {
@@ -21,8 +20,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "REACT_APP_API_BASE_URL": "@react_app_api_base_url"
-  }
+  ]
 }
