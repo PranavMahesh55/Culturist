@@ -1,0 +1,72 @@
+[
+  {
+    "user": "I'm opening a 1,500 sq ft pop-up store in Bushwick next month with a $25 k budget to showcase Japanese city-pop vinyls and matcha drinks. Give me a hyper-local product mix and decor ideas.",
+    "qloo_request": {
+      "endpoint": "/v2/insights",
+      "params": {
+        "filter.type": "urn:entity:place",
+        "filter.location.query": "Bushwick, Brooklyn, NY",
+        "filter.location.radius": 5000,
+        "filter.tags": "urn:tag:venue_type:pop_up_store,urn:tag:venue_type:record_store,urn:tag:venue_type:cafe",
+        "signal.interests.tags": "urn:tag:genre:music:japanese_city_pop,urn:tag:beverage:matcha",
+        "limit": 30
+      }
+    }
+  },
+  {
+    "user": "We're launching an 80-seat farm-to-table restaurant in East Austin that pairs Southwestern cuisine with natural wines. Recommend a hyper-local food & beverage mix that resonates with locals.",
+    "qloo_request": {
+      "endpoint": "/v2/insights",
+      "params": {
+        "filter.type": "urn:entity:place",
+        "filter.location.query": "East Austin, TX",
+        "filter.location.radius": 8000,
+        "filter.tags": "urn:tag:venue_type:restaurant",
+        "signal.interests.tags": "urn:tag:cuisine:southwestern,urn:tag:beverage:natural_wine,urn:tag:beverage:low_intervention_wine",
+        "limit": 25
+      }
+    }
+  },
+  {
+    "user": "I'm opening a rooftop cocktail bar in Downtown LA inspired by analog photography and lo-fi hip hop. Suggest signature drinks and vibe elements.",
+    "qloo_request": {
+      "endpoint": "/v2/insights",
+      "params": {
+        "filter.type": "urn:entity:place",
+        "filter.location.query": "Downtown Los Angeles, CA",
+        "filter.location.radius": 7000,
+        "filter.tags": "urn:tag:venue_type:cocktail_bar,urn:tag:venue_type:bar",
+        "signal.interests.tags": "urn:tag:technology:analog_photography,urn:tag:genre:music:lofi_hip_hop",
+        "limit": 20
+      }
+    }
+  },
+  {
+    "user": "Launching a streetwear sneaker boutique in SoHo that focuses on rare Air Jordan 1 drops and 1980s arcade aesthetics. Need product and decor guidance.",
+    "qloo_request": {
+      "endpoint": "/v2/insights",
+      "params": {
+        "filter.type": "urn:entity:place",
+        "filter.location.query": "SoHo, New York, NY",
+        "filter.location.radius": 3000,
+        "filter.tags": "urn:tag:venue_type:sneaker_store,urn:tag:venue_type:boutique",
+        "signal.interests.tags": "urn:tag:sneaker_model:air_jordan_1,urn:tag:aesthetic:retro_futurism,urn:tag:technology:arcade_games",
+        "limit": 18
+      }
+    }
+  },
+  {
+    "user": "Setting up a cozy 600 sq ft third-wave coffee micro-shop in Portland themed around lo-fi anime chill. Provide a product mix and ambiance recommendations.",
+    "qloo_request": {
+      "endpoint": "/v2/insights",
+      "params": {
+        "filter.type": "urn:entity:place",
+        "filter.location.query": "Portland, OR",
+        "filter.location.radius": 6000,
+        "filter.tags": "urn:tag:venue_type:coffee_shop,urn:tag:venue_type:cafe",
+        "signal.interests.tags": "urn:tag:aesthetic:lofi_anime,urn:tag:beverage:third_wave_coffee",
+        "limit": 22
+      }
+    }
+  }
+]

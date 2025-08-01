@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Frontend Loading</title>
+</head>
+<body>
+    <h1>Frontend Test</h1>
+    <p>Testing if the frontend issue is fixed...</p>
+    
+    <div id="api-test">
+        <h2>API Test</h2>
+        <button onclick="testAPI()">Test Backend API</button>
+        <div id="api-result"></div>
+    </div>
+
+    <script>
+        async function testAPI() {
+            const resultDiv = document.getElementById('api-result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Test health endpoint first
+                const healthResponse = await fetch('http://localhost:8000/health');
+                const healthData = await healthResponse.json();
+                
+                if (healthData.status === 'healthy') {
+                    resultDiv.innerHTML = '<p style="color: green;">✅ Backend is running!</p>';
+                    
+                    // Test venues endpoint
+                    const venuesResponse = await fetch('http://localhost:8000/api/venues', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            tastes: [{"name": "art", "urn": "urn:tag:genre:art"}],
+                            location: "New York, NY",
+                            coordinates: [40.7589, -73.9851]
+                        })
+                    });
+                    
+                    const venuesData = await venuesResponse.json();
+                    resultDiv.innerHTML += `<p style="color: green;">✅ Venues API Response: ${venuesData.venues?.length || 0} venues found</p>`;
+                    resultDiv.innerHTML += `<pre>${JSON.stringify(venuesData, null, 2)}</pre>`;
+                } else {
+                    resultDiv.innerHTML = '<p style="color: red;">❌ Backend health check failed</p>';
+                }
+            } catch (error) {
+                resultDiv.innerHTML = `<p style="color: red;">❌ Error: ${error.message}</p>`;
+                console.error('API test error:', error);
+            }
+        }
+        
+        // Test on page load
+        setTimeout(testAPI, 1000);
+    </script>
+</body>
+</html>

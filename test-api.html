@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Venues API</title>
+</head>
+<body>
+    <h1>Testing Venues API</h1>
+    <button onclick="testAPI()">Test API Call</button>
+    <div id="result"></div>
+
+    <script>
+    async function testAPI() {
+        console.log('Testing API call...');
+        
+        try {
+            const response = await fetch('http://localhost:8000/api/venues', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    tastes: [
+                        {"name": "specialty coffee", "type": "food_beverage"},
+                        {"name": "contemporary art", "type": "visual_arts"}
+                    ],
+                    location: "New York, NY",
+                    coordinates: [40.7589, -73.9851]
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log('API Response:', data);
+            
+            document.getElementById('result').innerHTML = 
+                '<h2>Real Venue Names:</h2>' + 
+                data.venues.map(v => `<p>${v.number}. ${v.name} (${v.type})</p>`).join('');
+                
+        } catch (error) {
+            console.error('API Error:', error);
+            document.getElementById('result').innerHTML = 
+                '<p style="color: red;">Error: ' + error.message + '</p>';
+        }
+    }
+    </script>
+</body>
+</html>
