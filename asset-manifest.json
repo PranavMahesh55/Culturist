@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Culturist/static/css/main.65b63ce8.css",
+    "main.js": "/Culturist/static/js/main.3915db4d.js",
+    "static/js/453.327c3c23.chunk.js": "/Culturist/static/js/453.327c3c23.chunk.js",
+    "static/media/img7.png": "/Culturist/static/media/img7.c4d7cd25f4e90c15cab7.png",
+    "static/media/img6.png": "/Culturist/static/media/img6.723a50f473cb44d107f5.png",
+    "static/media/img3.png": "/Culturist/static/media/img3.fe0c3e5c05cdeaebcdbf.png",
+    "static/media/img2.png": "/Culturist/static/media/img2.281fd80112845fb145d4.png",
+    "static/media/img4.png": "/Culturist/static/media/img4.93bbe2bb11985a196371.png",
+    "static/media/img1.png": "/Culturist/static/media/img1.703a5b951cf2996eb2be.png",
+    "index.html": "/Culturist/index.html",
+    "main.65b63ce8.css.map": "/Culturist/static/css/main.65b63ce8.css.map",
+    "main.3915db4d.js.map": "/Culturist/static/js/main.3915db4d.js.map",
+    "453.327c3c23.chunk.js.map": "/Culturist/static/js/453.327c3c23.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65b63ce8.css",
+    "static/js/main.3915db4d.js"
+  ]
+}

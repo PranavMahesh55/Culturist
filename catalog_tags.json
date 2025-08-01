@@ -1,0 +1,72 @@
+{
+  "artist": [
+    { "id": "urn:entity:artist:phoebe_bridgers", "name": "Phoebe Bridgers" },
+    { "id": "urn:entity:artist:taylor_swift", "name": "Taylor Swift" },
+    { "id": "urn:entity:artist:kendrick_lamar", "name": "Kendrick Lamar" },
+    { "id": "urn:entity:artist:billie_eilish", "name": "Billie Eilish" },
+    { "id": "urn:entity:artist:the_weeknd", "name": "The Weeknd" },
+    { "id": "urn:entity:artist:dua_lipa", "name": "Dua Lipa" },
+    { "id": "urn:entity:artist:bad_bunny", "name": "Bad Bunny" },
+    { "id": "urn:entity:artist:olivia_rodrigo", "name": "Olivia Rodrigo" }
+  ],
+  "beverage": [
+    { "id": "urn:entity:beverage:craft_beer", "name": "Craft Beer" },
+    { "id": "urn:entity:beverage:natural_wine", "name": "Natural Wine" },
+    { "id": "urn:entity:beverage:matcha", "name": "Matcha" },
+    { "id": "urn:entity:beverage:cold_brew", "name": "Cold Brew Coffee" },
+    { "id": "urn:entity:beverage:kombucha", "name": "Kombucha" },
+    { "id": "urn:entity:beverage:cocktails", "name": "Craft Cocktails" },
+    { "id": "urn:entity:beverage:sake", "name": "Sake" },
+    { "id": "urn:entity:beverage:bubble_tea", "name": "Bubble Tea" }
+  ],
+  "cuisine": [
+    { "id": "urn:entity:cuisine:japanese", "name": "Japanese Cuisine" },
+    { "id": "urn:entity:cuisine:italian", "name": "Italian Cuisine" },
+    { "id": "urn:entity:cuisine:mexican", "name": "Mexican Cuisine" },
+    { "id": "urn:entity:cuisine:thai", "name": "Thai Cuisine" },
+    { "id": "urn:entity:cuisine:korean", "name": "Korean Cuisine" },
+    { "id": "urn:entity:cuisine:mediterranean", "name": "Mediterranean" },
+    { "id": "urn:entity:cuisine:indian", "name": "Indian Cuisine" },
+    { "id": "urn:entity:cuisine:french", "name": "French Cuisine" }
+  ],
+  "film": [
+    { "id": "urn:entity:film:indie_cinema", "name": "Indie Cinema" },
+    { "id": "urn:entity:film:sci_fi", "name": "Sci-Fi Films" },
+    { "id": "urn:entity:film:documentaries", "name": "Documentaries" },
+    { "id": "urn:entity:film:horror", "name": "Horror Films" },
+    { "id": "urn:entity:film:foreign_films", "name": "Foreign Films" },
+    { "id": "urn:entity:film:animation", "name": "Animation" },
+    { "id": "urn:entity:film:noir", "name": "Film Noir" },
+    { "id": "urn:entity:film:comedy", "name": "Comedy Films" }
+  ],
+  "fashion": [
+    { "id": "urn:entity:fashion:vintage", "name": "Vintage Fashion" },
+    { "id": "urn:entity:fashion:streetwear", "name": "Streetwear" },
+    { "id": "urn:entity:fashion:sustainable", "name": "Sustainable Fashion" },
+    { "id": "urn:entity:fashion:minimalist", "name": "Minimalist Style" },
+    { "id": "urn:entity:fashion:luxury", "name": "Luxury Fashion" },
+    { "id": "urn:entity:fashion:bohemian", "name": "Bohemian Style" },
+    { "id": "urn:entity:fashion:athletic", "name": "Athletic Wear" },
+    { "id": "urn:entity:fashion:avant_garde", "name": "Avant-Garde" }
+  ],
+  "activities": [
+    { "id": "urn:entity:activity:yoga", "name": "Yoga" },
+    { "id": "urn:entity:activity:hiking", "name": "Hiking" },
+    { "id": "urn:entity:activity:art_galleries", "name": "Art Galleries" },
+    { "id": "urn:entity:activity:live_music", "name": "Live Music" },
+    { "id": "urn:entity:activity:cooking", "name": "Cooking Classes" },
+    { "id": "urn:entity:activity:photography", "name": "Photography" },
+    { "id": "urn:entity:activity:gaming", "name": "Gaming" },
+    { "id": "urn:entity:activity:meditation", "name": "Meditation" }
+  ],
+  "sports": [
+    { "id": "urn:entity:sport:basketball", "name": "Basketball" },
+    { "id": "urn:entity:sport:soccer", "name": "Soccer" },
+    { "id": "urn:entity:sport:tennis", "name": "Tennis" },
+    { "id": "urn:entity:sport:cycling", "name": "Cycling" },
+    { "id": "urn:entity:sport:rock_climbing", "name": "Rock Climbing" },
+    { "id": "urn:entity:sport:surfing", "name": "Surfing" },
+    { "id": "urn:entity:sport:skiing", "name": "Skiing" },
+    { "id": "urn:entity:sport:martial_arts", "name": "Martial Arts" }
+  ]
+}
