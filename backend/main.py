@@ -17,9 +17,19 @@ from mongo import logs_col
 load_dotenv()
 client = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 app = FastAPI()
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
+
+# Get allowed origins from environment or use defaults
+allowed_origins = os.getenv("ALLOWED_ORIGINS", 
+    '["http://localhost:3000", "http://localhost:3001", "http://localhost:5000", "http://localhost:5001", "http://127.0.0.1:3000", "http://127.0.0.1:3001", "http://127.0.0.1:5000", "http://127.0.0.1:5001"]'
+)
+
+# Parse the origins string if it's a JSON string
+try:
+    import json
+    if isinstance(allowed_origins, str):
+        allowed_origins = json.loads(allowed_origins)
+except:
+    allowed_origins = [
         "http://localhost:3000", 
         "http://localhost:3001", 
         "http://localhost:5000",
@@ -28,6 +38,11 @@ app.add_middleware(
         "http://127.0.0.1:3001",
         "http://127.0.0.1:5000",
         "http://127.0.0.1:5001"
+    ]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins
     ],
     allow_credentials=True,
     allow_methods=["*"],

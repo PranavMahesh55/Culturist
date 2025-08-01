@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "main.py"
+    }
+  ],
+  "env": {
+    "QLOO_API_KEY": "@qloo_api_key",
+    "OPENAI_API_KEY": "@openai_api_key",
+    "MONGODB_URI": "@mongodb_uri",
+    "ENVIRONMENT": "production",
+    "ALLOWED_ORIGINS": "[\"https://culturis.vercel.app\", \"https://your-frontend-url.vercel.app\"]"
+  }
+}
